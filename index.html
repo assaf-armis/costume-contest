@@ -11,22 +11,29 @@
       align-items: center; justify-content: center;
       background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
       color: #fff; font-family: 'Segoe UI', sans-serif; text-align: center;
-      padding: 2rem; gap: 2rem;
+      padding: 1.5rem; gap: 1.5rem;
     }
-    .images { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; align-items: center; }
+    .images {
+      display: flex; gap: 0.75rem; justify-content: center; align-items: center;
+      width: 100%;
+    }
     .images img {
-      max-width: 280px; width: 100%; height: auto; border-radius: 16px;
+      width: 45%; max-width: 180px; height: auto; border-radius: 12px;
       box-shadow: 0 8px 32px rgba(0,0,0,0.3);
     }
-    h1 { font-size: clamp(2rem, 5vw, 4rem); }
-    .subtitle { font-size: clamp(1rem, 2.5vw, 1.5rem); opacity: 0.8; }
-    .countdown { display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
-    .countdown div {
-      background: rgba(255,255,255,0.1); border-radius: 12px;
-      padding: 1.5rem 2rem; min-width: 100px; backdrop-filter: blur(10px);
+    h1 { font-size: clamp(1.5rem, 6vw, 3rem); }
+    .subtitle { font-size: clamp(0.9rem, 3vw, 1.3rem); opacity: 0.8; }
+    .countdown {
+      display: flex; gap: 0.5rem; justify-content: center;
+      flex-wrap: nowrap; width: 100%;
     }
-    .countdown .number { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: bold; }
-    .countdown .label { font-size: 0.85rem; text-transform: uppercase; opacity: 0.7; margin-top: 0.25rem; }
+    .countdown div {
+      background: rgba(255,255,255,0.1); border-radius: 10px;
+      padding: 0.75rem 0.5rem; flex: 1; max-width: 80px;
+      backdrop-filter: blur(10px);
+    }
+    .countdown .number { font-size: clamp(1.4rem, 5vw, 2.5rem); font-weight: bold; }
+    .countdown .label { font-size: 0.65rem; text-transform: uppercase; opacity: 0.7; margin-top: 0.2rem; }
   </style>
 </head>
 <body>
